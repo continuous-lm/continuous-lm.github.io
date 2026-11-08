@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Continuous Language Model Map</title>
+<meta name="description" content="An interactive, color-coded map of the continuous diffusion and flow language models cited in our survey, grouped by state space, generator, and application.">
+<meta name="author" content="Sophia Tang">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="A Map of Continuous Language Models">
+<meta property="og:description" content="Every continuous diffusion and flow language model cited in our survey, on one interactive map.">
+<meta property="og:image" content="https://continuous-lm.github.io/assets/social.png">
+<meta property="og:url" content="https://continuous-lm.github.io/map/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://continuous-lm.github.io/map/">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=JetBrains+Mono:wght@400..700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="map.css?v=1d8881f907">
+<script src="../theme.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script defer src="data.js?v=bc66144ef2"></script>
+<script defer src="map.js?v=6ae1c5d9e0"></script>
+</head>
+<body>
+<a class="skip-link" href="#map">Skip to map</a>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode"><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg></button>
+
+<header class="map-hero wrap" id="top">
+  <nav class="map-crumbs" aria-label="Related pages">
+    <a href="../">&larr; Survey project page</a>
+    <a href="https://www.alphaxiv.org/abs/2611.continuous-diffusion-flow-language-models" target="_blank" rel="noopener">Read survey ↗</a>
+    <a href="#indexTitle">Paper index</a>
+    <a href="#citation">BibTeX</a>
+    <a href="https://github.com/sophtang/Awesome-Continuous-Language-Models" target="_blank" rel="noopener">GitHub paper list ↗</a>
+  </nav>
+  <h1 class="paper-title"><span>A Map of</span> <span class="title-sub"><em>Continuous Language Models</em></span></h1>
+  <p class="map-deck">Explore <mark class="hl-lavender">continuous diffusion and flow language models</mark> from our survey, built on <mark class="hl-mint">one-hot and binary encodings, embeddings, compressed latents, simplices, and spheres</mark>. <mark class="hl-sky">Colors and shapes mark model families.</mark> Select a paper for a short overview, what the survey says about it, and links to arXiv, alphaXiv, and available code.</p>
+  <p class="map-updated">Last updated <time datetime="2026-11-06">Nov 6, 2026</time></p>
+</header>
+
+<main class="map-page wrap" id="map">
+  <div class="widget map-widget">
+    <div class="widget-frame">
+      <div class="widget-head">
+        <span class="w-title">Continuous language models in the survey</span>
+        <span class="w-kind" id="mapCount"></span>
+      </div>
+
+      <div class="map-toolbar">
+        <label class="map-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="search" type="search" placeholder="Search models, titles, authors" autocomplete="off" aria-label="Search papers">
+        </label>
+        <div class="map-years" role="group" aria-label="Show papers published through">
+          <span class="tb-label">Through</span>
+          <div class="seg" id="years"></div>
+        </div>
+        <div class="seg map-zoom" aria-label="Zoom">
+          <button class="btn icon-btn" type="button" id="zoomIn" aria-label="Zoom in" title="Zoom in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+          <button class="btn icon-btn" type="button" id="zoomOut" aria-label="Zoom out" title="Zoom out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+          <button class="btn icon-btn" type="button" id="zoomReset" aria-label="Reset view" title="Reset view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+
+      <div class="map-legend" id="legend" role="group" aria-label="Filter by family"></div>
+
+      <div class="map-stage" id="stage">
+        <svg id="mapSvg" role="img" aria-labelledby="mapSvgTitle">
+          <title id="mapSvgTitle">Scatter map of continuous language model papers grouped into eight families</title>
+          <g id="layerHalos"></g>
+          <g id="layerEdges"></g>
+          <g id="layerNodes"></g>
+          <g id="layerLabels"></g>
+          <g id="layerClusters"></g>
+        </svg>
+        <div class="map-tip" id="tip" role="tooltip" hidden></div>
+        <aside class="map-panel" id="panel" aria-live="polite" hidden></aside>
+        <p class="map-empty" id="empty" hidden>No papers match. Clear the search or turn a family back on.</p>
+      </div>
+      <p class="hint map-hint">Drag to pan, scroll or pinch to zoom, and click a paper to see where the survey discusses it. Lines connect papers cited together.</p>
+    </div>
+  </div>
+
+  <section class="paper-index" aria-labelledby="indexTitle">
+    <h2 id="indexTitle" class="section-heading">Paper Index</h2>
+    <p class="index-sub" id="indexSub">Every paper on the map, grouped by family. The search and filters above apply here too.</p>
+    <div id="index"></div>
+  </section>
+
+  <section id="citation" class="map-citation" aria-labelledby="citation-title">
+    <h2 id="citation-title" class="section-heading">BibTeX</h2>
+    <p class="section-note">If you found this map helpful, please cite our survey.</p>
+    <div class="citation-box">
+      <button id="copy-bibtex" type="button" aria-label="Copy BibTeX citation" title="Copy BibTeX"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h12v12H8zM16 4H4v12"/></svg></button>
+      <pre><code id="bibtex-code">@article{tang2026survey,
+  author = {Tang, Sophia and Lee, Chanhyuk and Eijkelboom, Floor and Kim, Jinwoo},
+  title = {A Survey on Continuous Diffusion and Flow Language Models},
+  url = {https://www.alphaxiv.org/abs/2611.continuous-diffusion-flow-language-models},
+  publisher = {alphaXiv},
+  year = {2026}
+}</code></pre>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap"><a href="../">&larr; A Survey on Continuous Diffusion and Flow Language Models</a><a href="https://github.com/sophtang/Awesome-Continuous-Language-Models" target="_blank" rel="noopener">Awesome Continuous Language Models &nearr;</a></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

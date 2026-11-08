@@ -1,0 +1,882 @@
+{
+ "agarwal2026posterior": {
+  "arxiv": "2606.24773",
+  "code": "https://github.com/MananAg007/posterior-refinement",
+  "overview": "FMLM+ equips flow map language models with masking-style noise schedules. It generates a full sequence in one step and can also critique, erase, and regenerate subsets of tokens.",
+  "published": "2026-06-23"
+ },
+ "albergo2023unifying": {
+  "arxiv": "2303.08797",
+  "published": "2023-03-15"
+ },
+ "avdeyev2023dirichlet": {
+  "arxiv": "2305.10699",
+  "code": "https://github.com/jzhoulab/ddsm",
+  "overview": "DDSM defines a diffusion process on the probability simplex whose stationary distribution is Dirichlet, which makes continuous diffusion natural for biological sequences.",
+  "published": "2023-05-18"
+ },
+ "azangulov2026masked": {
+  "arxiv": "2606.27617",
+  "code": "https://github.com/imbirik/mlfm",
+  "overview": "MLFM incorporates masking into flow language models, which otherwise must decode every token during generation. This makes multi-step reasoning tasks easier to handle.",
+  "published": "2026-06-26"
+ },
+ "baek2026generative": {
+  "arxiv": "2605.19376",
+  "overview": "GRAM turns deterministic recursive latent reasoning into a probabilistic model with multiple trajectories, so one model can represent several solutions.",
+  "published": "2026-05-19"
+ },
+ "bai2026efficient": {
+  "arxiv": "2610.09416",
+  "overview": "The authors compare the reasoning efficiency of flow language models and discrete diffusion under matched denoising steps, to learn what the continuous sequence representation contributes.",
+  "published": "2026-10-07"
+ },
+ "bansal2026token": {
+  "arxiv": "2607.14106",
+  "overview": "TTCD maps Gaussian noise deterministically to tokens and gives each token its own time, so more certain tokens can move from noise to text faster than others.",
+  "published": "2026-05-07"
+ },
+ "barrault2024large": {
+  "arxiv": "2412.08821",
+  "code": "https://github.com/facebookresearch/large_concept_model",
+  "overview": "Large Concept Models operate on an explicit higher-level semantic representation at the level of sentences, rather than on tokens.",
+  "published": "2024-12-11"
+ },
+ "batzolis2026cobit": {
+  "arxiv": "2605.07013",
+  "code": "https://github.com/GBATZOLIS/BitstreamDiffusion",
+  "overview": "CoBit models text as continuous diffusion over fixed-width binary bitstreams. It uses a matched-filter residual parameterization and a stochastic sampler with Langevin-type corrections.",
+  "published": "2026-05-07"
+ },
+ "batzolis2026multimodal": {
+  "arxiv": "2610.14349",
+  "code": "https://github.com/GBATZOLIS/BitstreamDiffusion",
+  "overview": "Multimodal CoBit extends bitstream diffusion to joint and conditional generation across image-text, speech-text, and protein sequence-structure, using one training and sampling protocol.",
+  "published": "2026-10-09"
+ },
+ "bhatt2026generating": {
+  "arxiv": "2603.20589",
+  "overview": "The authors use random constraint satisfaction problems as a benchmark for discrete generation and show that theory predicts observed behavior. Continuous diffusions outperform masked diffusions in their study.",
+  "published": "2026-03-21"
+ },
+ "boffi2024flow": {
+  "arxiv": "2406.07507",
+  "published": "2024-06-11"
+ },
+ "boffi2025build": {
+  "arxiv": "2505.18825",
+  "code": "https://github.com/nmboffi/flow-maps",
+  "published": "2025-05-24"
+ },
+ "caceresarroyo2026repurposing": {
+  "arxiv": "2602.02425",
+  "overview": "CHASE compresses protein language model embeddings into a compact latent space and trains conditional flow matching with classifier-free guidance to generate high-fitness variants.",
+  "published": "2026-02-02"
+ },
+ "chavan2026large": {
+  "arxiv": "2610.28559",
+  "code": "https://github.com/lafa-gh/large-flow-lms",
+  "overview": "Lafa scales flow language models to 8B parameters. It flows asynchronously within blocks and uses causal attention on the prefix, so it can adapt pretrained autoregressive models and decode quickly with prefix caching.",
+  "published": "2026-10-20"
+ },
+ "chemseddine2026spherical": {
+  "arxiv": "2605.05629",
+  "code": "https://github.com/JChemseddine/SFCD",
+  "overview": "Spherical Flows generate discrete sequences on the sphere, where the von Mises-Fisher distribution gives a natural noise process. The authors reduce the conditional velocity to a scalar ODE.",
+  "published": "2026-05-07"
+ },
+ "chen2022analog": {
+  "arxiv": "2208.04202",
+  "code": "https://github.com/google-research/pix2seq",
+  "overview": "Bit Diffusion represents discrete data as binary bits and models them as real numbers with continuous diffusion. The paper also introduces self-conditioning and asymmetric time intervals.",
+  "published": "2022-08-08"
+ },
+ "chen2024diffusion": {
+  "arxiv": "2407.01392",
+  "code": "https://github.com/buoyancy99/diffusion-forcing",
+  "published": "2024-07-01"
+ },
+ "chen2025dlm": {
+  "arxiv": "2506.00290",
+  "overview": "DLM-One trains a student for one-step generation by aligning the scores of its outputs with those of a pretrained teacher. It works on both token embedding and logit simplex spaces.",
+  "published": "2025-05-30"
+ },
+ "chen2026langflow": {
+  "arxiv": "2604.11748",
+  "code": "https://github.com/nealchen2003/LangFlow",
+  "overview": "LangFlow connects embedding-space diffusion to flow matching through Bregman divergence. It adds an ODE-based likelihood bound and an information-uniform noise schedule, and it rivals discrete diffusion.",
+  "published": "2026-04-13"
+ },
+ "davis2024fisher": {
+  "arxiv": "2405.14664",
+  "code": "https://github.com/olsdavis/fisher-flow",
+  "overview": "Fisher-Flow treats categorical distributions as points on a statistical manifold with the Fisher-Rao metric, and it trains flow matching on that geometry.",
+  "published": "2024-05-23"
+ },
+ "davis2026design": {
+  "arxiv": "2610.13834",
+  "overview": "DoubleCat and SemiCat come from a study of self-conditioning and embedding geometry. The authors show that self-conditioning corrects a mismatch between training and inference, which suggests cheaper designs.",
+  "published": "2026-10-09"
+ },
+ "davis2026scaling": {
+  "arxiv": "2605.07820",
+  "overview": "The authors train a 1.7B flow model and self-distill it into a categorical flow map that generates diverse text in few steps, which answers whether this approach scales past 1B parameters.",
+  "published": "2026-05-08"
+ },
+ "deng2026generative": {
+  "arxiv": "2602.04770",
+  "published": "2026-02-04"
+ },
+ "deschenaux2026language": {
+  "arxiv": "2605.11125",
+  "code": "https://github.com/jdeschena/s-flm",
+  "overview": "S-FLM moves flow language models from high-dimensional one-hot vectors to hyperspherical embeddings. This lowers training cost and gives noise a more semantic meaning.",
+  "published": "2026-05-11"
+ },
+ "deschenaux2026simplex": {
+  "arxiv": "2609.35553",
+  "overview": "SDM lifts diffusion to the probability simplex to keep beliefs over categories at each step. It has closed-form reverse transitions, trains with cross-entropy, and uses a DDIM-like sampler.",
+  "published": "2026-09-28"
+ },
+ "dhariwal2021diffusion": {
+  "arxiv": "2105.05233",
+  "code": "https://github.com/openai/guided-diffusion",
+  "published": "2021-05-11"
+ },
+ "dieleman2022continuous": {
+  "arxiv": "2211.15089",
+  "overview": "CDCD models categorical data with diffusion that is continuous in both time and input space, and the authors demonstrate it on several language modeling tasks.",
+  "published": "2022-11-28"
+ },
+ "dilip2026guide": {
+  "arxiv": "2609.19356",
+  "overview": "Probe guidance builds a guidance signal from the frozen internal states of a diffusion model. It works like autoguidance but needs no additional forward pass at inference time.",
+  "published": "2026-09-16"
+ },
+ "dong2026language": {
+  "arxiv": "2605.14531",
+  "overview": "Manta-LM casts language generation as stochastic optimal control. It uses flow matching in a latent control space to approximate a closed-loop optimal policy.",
+  "published": "2026-05-14"
+ },
+ "draxler2026parallel": {
+  "arxiv": "2512.21323",
+  "code": "https://github.com/mandt-lab/ptp",
+  "overview": "PTP moves randomness from post-hoc sampling to random inputs, which makes future tokens jointly predictable in a single forward pass. It trains by distillation or by inverse autoregressive training.",
+  "published": "2025-12-24"
+ },
+ "draxler2026parallel2": {
+  "arxiv": "2610.26693",
+  "code": "https://github.com/mandt-lab/plm",
+  "overview": "PLMs generate mutually consistent tokens in one forward pass by routing dependencies through latent auxiliary variables. They train with a variational bound that combines an autoregressive loss and a parallel decoding loss.",
+  "published": "2026-10-19"
+ },
+ "drobyshevskiy2026representation": {
+  "arxiv": "2610.06648",
+  "code": "https://github.com/yandex-research/dlm-mmd",
+  "overview": "Rep-MMD is a post-training method that minimizes Maximum Mean Discrepancy in the feature space of a frozen pretrained model. Continuous models differentiate directly through generated latents.",
+  "published": "2026-10-05"
+ },
+ "du2026continuous": {
+  "arxiv": "2606.08810",
+  "overview": "The authors study why continuous models generate fluent text from noisy embeddings. They identify a decoder-basin mechanism and propose a diagnostic protocol that exposes failures hidden by scalar metrics.",
+  "published": "2026-06-07"
+ },
+ "eijkelboom2024variational": {
+  "arxiv": "2406.04843",
+  "overview": "This paper formulates flow matching as variational inference and develops CatFlow, a flow matching method for categorical data that the authors evaluate on graph generation.",
+  "published": "2024-06-07"
+ },
+ "eijkelboom2026categorical": {
+  "overview": "Categorical Drifting adapts drifting models to categorical data. A mirror-descent step adds the drift field to the logits, and the model trains with cross-entropy."
+ },
+ "feng2026denoising": {
+  "arxiv": "2610.09311",
+  "overview": "BLD lets one continuous state represent many tokens. It compresses a 1024-token sequence into 64 block latents, which makes each denoising step much cheaper.",
+  "published": "2026-10-07"
+ },
+ "franca2026hacking": {
+  "arxiv": "2606.08417",
+  "code": "https://github.com/antoniofrancaib/dlmbench",
+  "overview": "The authors explain why generative perplexity is unreliable. They construct training-free samplers that match or beat trained models on this metric at comparable entropy.",
+  "published": "2026-06-07"
+ },
+ "frans2025one": {
+  "arxiv": "2410.12557",
+  "code": "https://github.com/kvfrans/shortcut-models",
+  "published": "2024-10-16"
+ },
+ "gao2022empowering": {
+  "arxiv": "2212.09412",
+  "code": "https://github.com/zhjgao/difformer",
+  "overview": "Difformer studies the optimization problems of diffusing on embeddings. It adds an anchor loss to prevent embedding collapse and a noise schedule better suited to training the denoiser.",
+  "published": "2022-12-19"
+ },
+ "geng2025mean": {
+  "arxiv": "2505.13447",
+  "code": "https://github.com/Gsunshine/meanflow",
+  "published": "2025-05-19"
+ },
+ "gong2022diffuseq": {
+  "arxiv": "2210.08933",
+  "code": "https://github.com/Shark-NLP/DiffuSeq",
+  "overview": "DiffuSeq applies diffusion to sequence-to-sequence text generation. It performs comparably to or better than six established baselines and produces highly diverse outputs.",
+  "published": "2022-10-17"
+ },
+ "gong2023diffuseqv2": {
+  "arxiv": "2310.05793",
+  "code": "https://github.com/Shark-NLP/DiffuSeq",
+  "overview": "DiffuSeq-v2 adds a soft absorbing state that helps the model learn discrete mutations from the underlying Gaussian space, which speeds up sequence-to-sequence training and sampling.",
+  "published": "2023-10-09"
+ },
+ "graves2023bayesian": {
+  "arxiv": "2308.07037",
+  "code": "https://github.com/nnaisense/bayesian-flow-networks",
+  "overview": "Bayesian Flow Networks update the parameters of independent distributions with Bayesian inference and pass them through a neural network. This gives a generative procedure with no forward process, and discrete data stays on the probability simplex.",
+  "published": "2023-08-14"
+ },
+ "gulrajani2023likelihood": {
+  "arxiv": "2305.18619",
+  "code": "https://github.com/igul222/plaid",
+  "overview": "Plaid takes the first steps toward closing the likelihood gap with autoregressive models. The authors combine better maximum-likelihood training, scaling laws, and more compute.",
+  "published": "2023-05-30"
+ },
+ "guo2026cola2": {
+  "arxiv": "2610.31305",
+  "overview": "Cola2 studies continuous semantic compression together with discrete realization. It segments text into semantic spans and co-adapts the latent space with a block-causal masked diffusion decoder.",
+  "published": "2026-10-22"
+ },
+ "guo2026continuous": {
+  "arxiv": "2605.06548",
+  "code": "https://github.com/ByteDance-Seed/Cola-DLM",
+  "overview": "Cola DLM is a hierarchical latent diffusion model. A text VAE learns the latent mapping, a block-causal DiT models a global semantic prior, and conditional decoding produces the text.",
+  "published": "2026-05-07"
+ },
+ "guo2026deltaflow": {
+  "arxiv": "2608.01240",
+  "overview": "DeltaFlow replaces quadratic attention in ELF with a noise-adaptive bidirectional gated delta network, which makes each denoising step cheaper.",
+  "published": "2026-08-02"
+ },
+ "guo2026rangeswa": {
+  "arxiv": "2610.42084",
+  "overview": "RangeSWA extends generation past the training length without training. It combines sliding-window attention, summaries of distant blocks, and dynamic content retrieval.",
+  "published": "2026-10-30"
+ },
+ "han2023ssd": {
+  "arxiv": "2210.17432",
+  "code": "https://github.com/xhan77/ssd-lm",
+  "overview": "SSD-LM generates blocks of text semi-autoregressively and diffuses on the vocabulary space instead of a learned latent space, so off-the-shelf classifiers can guide it directly.",
+  "published": "2022-10-31"
+ },
+ "han2024david": {
+  "arxiv": "2305.14771",
+  "overview": "The authors scale SSD-LM from 0.4B to 13B parameters and finetune it to follow instructions. SSD-2 then lets a small specialist diffusion model guide a large general model at inference time.",
+  "published": "2023-05-24"
+ },
+ "han2026backpropagating": {
+  "arxiv": "2610.19080",
+  "overview": "The authors propose a post-training framework for continuous flow language models that backpropagates verifier rewards through the denoising steps to obtain pathwise gradients.",
+  "published": "2026-10-13"
+ },
+ "he2026rethinking": {
+  "arxiv": "2610.12898",
+  "overview": "PSF divides the generative work. The diffusion prior generates high-level predictive information for each block, and the decoder resolves the remaining token-level choices.",
+  "published": "2026-10-09"
+ },
+ "helbling2026flow": {
+  "arxiv": "2606.29150",
+  "code": "https://github.com/helblazer811/Flow-Reasoning-Models",
+  "overview": "FRMs self-condition a flow model on its own past outputs, which turns one-shot denoising into iterative refinement. They revise interdependent decisions in parallel to solve structured puzzles.",
+  "published": "2026-06-28"
+ },
+ "ho2020denoising": {
+  "arxiv": "2006.11239",
+  "code": "https://github.com/hojonathanho/diffusion",
+  "published": "2020-06-19"
+ },
+ "ho2022classifier": {
+  "arxiv": "2207.12598",
+  "published": "2022-07-26"
+ },
+ "hu2024flow": {
+  "overview": "FlowSeq applies flow matching to conditional text generation. It trains a velocity field with an anchor loss and generates in a single Euler step."
+ },
+ "hu2026elf": {
+  "arxiv": "2605.10938",
+  "code": "https://github.com/lillian039/ELF",
+  "overview": "ELF applies continuous-time flow matching in embedding space with minimal adaptation to discrete data. It stays continuous until the final step, where it maps the state to tokens.",
+  "published": "2026-05-11"
+ },
+ "huang2026guide": {
+  "arxiv": "2604.27147",
+  "code": "https://github.com/jrrhuang/fmrg",
+  "overview": "FMRG reformulates guidance as deterministic optimal control, and the flow map arises naturally in the solution. This gives few-step reward guidance without expensive many-step schemes.",
+  "published": "2026-04-29"
+ },
+ "inference_song2021ddim": {
+  "arxiv": "2010.02502",
+  "code": "https://github.com/ermongroup/ddim",
+  "published": "2020-10-06"
+ },
+ "inference_ye2024dinoiser": {
+  "arxiv": "2302.10025",
+  "code": "https://github.com/yegcjs/DINOISER",
+  "overview": "DINOISER shows that noise scale decides how much discreteness remains in embeddings. It adapts the noise scales sampled in training and amplifies them at inference so that the model uses source conditions better.",
+  "published": "2023-02-20"
+ },
+ "jia2026llaco": {
+  "arxiv": "2610.32604",
+  "code": "https://github.com/WhenGIX/LLaCO",
+  "overview": "LLaCO adapts continuous diffusion to large language models. Its Competition Threshold Theory explains how embedding norm decay misaligns the trajectory with time, and it evaluates token competition directionally.",
+  "published": "2026-10-23"
+ },
+ "jiang2026textldm": {
+  "arxiv": "2605.07748",
+  "overview": "TextLDM transfers the visual latent diffusion recipe to text with minimal changes. A Transformer VAE with representation alignment produces latents, and a standard DiT performs flow matching on them.",
+  "published": "2026-05-08"
+ },
+ "jo2026continuous": {
+  "arxiv": "2502.11564",
+  "code": "https://github.com/harryjo97/RDLM",
+  "overview": "RDLM builds continuous diffusion on the geometry of the categorical distribution, using a statistical manifold. The authors connect it to discrete diffusion, so continuous models keep their signal between steps.",
+  "published": "2025-02-17"
+ },
+ "jutras2026sticky": {
+  "arxiv": "2607.10951",
+  "code": "https://github.com/PascalJD/sticky-jump-diffusions",
+  "overview": "Sticky Jump Diffusions are continuous-time processes anchored at token embeddings. They recover masked, continuous, and hybrid diffusion as limits and train from one denoising classifier.",
+  "published": "2026-07-12"
+ },
+ "karras2022elucidating": {
+  "arxiv": "2206.00364",
+  "code": "https://github.com/NVlabs/edm",
+  "published": "2022-06-01"
+ },
+ "karras2024guiding": {
+  "arxiv": "2406.02507",
+  "code": "https://github.com/NVlabs/edm2",
+  "published": "2024-06-04"
+ },
+ "kim2024consistency": {
+  "arxiv": "2310.02279",
+  "code": "https://github.com/sony/ctm",
+  "published": "2023-10-01"
+ },
+ "kim2026continuous": {
+  "arxiv": "2602.12468",
+  "code": "https://github.com/large-loris-models/Diffinity",
+  "overview": "Diffinity steers continuous models to satisfy regular expressions without training. An analytic score estimates the probability that a latent state decodes to a valid string, and its gradient guides sampling.",
+  "published": "2026-02-12"
+ },
+ "kim2026gumbel": {
+  "arxiv": "2610.00497",
+  "overview": "GSF distills an autoregressive model into a one-step flow. The Gumbel coupling from the teacher gives non-intersecting straight paths from noise to one-hot sequences.",
+  "published": "2026-09-30"
+ },
+ "kingma2021variational": {
+  "arxiv": "2107.00630",
+  "code": "https://github.com/google-research/vdm",
+  "published": "2021-07-01"
+ },
+ "kong2025protflow": {
+  "arxiv": "2504.10983",
+  "overview": "ProtFlow designs protein sequences quickly with flow matching on compressed protein language model embeddings.",
+  "published": "2025-04-15"
+ },
+ "kornhardt2026sol": {
+  "arxiv": "2610.06513",
+  "code": "https://github.com/GregorKornhardt/SOL",
+  "overview": "SOL is a distance between text distributions. It compares the hidden states of a fixed transformer with a double sliced Wasserstein distance, and the authors prove it is a metric for injective transformers.",
+  "published": "2026-10-05"
+ },
+ "kouzelis2026self": {
+  "arxiv": "2610.37115",
+  "overview": "SERF improves continuous diffusion language models through noisy-to-clean self-distillation, using the denoising trajectory itself as a learning signal.",
+  "published": "2026-10-27"
+ },
+ "lee2026asynchronous": {
+  "arxiv": "2610.42018",
+  "code": "https://github.com/david3684/async-fmlm",
+  "overview": "aFLM and aFMLM bring prediction order into one-step generation. Tokenwise time schedules control the relative denoising progress of each token, and the schedules can be prescribed or learned.",
+  "published": "2026-10-30"
+ },
+ "lee2026beckmann": {
+  "arxiv": "2608.01692",
+  "overview": "Beckmann Transport Models use a time-independent velocity field to map exactly onto singular targets. A conservation equation learns the one-step map directly from samples.",
+  "published": "2026-08-03"
+ },
+ "lee2026flow": {
+  "arxiv": "2602.16813",
+  "code": "https://github.com/david3684/flm",
+  "overview": "FLM trains continuous flows over one-hot tokens with cross-entropy, and FMLM learns the associated flow map for few-step generation. Discrete methods lack this flow map, and the authors show better quality and speed than discrete diffusion.",
+  "published": "2026-02-18"
+ },
+ "lemercier2026diladiff": {
+  "arxiv": "2605.23605",
+  "overview": "DiLaDiff extends masked diffusion with a continuous semantic latent space and a latent diffusion prior. A consistency model distills that prior for few-step generation.",
+  "published": "2026-05-22"
+ },
+ "li2022diffusion": {
+  "arxiv": "2205.14217",
+  "code": "https://github.com/XiangLi1999/Diffusion-LM",
+  "overview": "Diffusion-LM denoises Gaussian vectors into word vectors. Its continuous intermediate states let simple classifiers control complex attributes such as syntactic structure, without retraining the model.",
+  "published": "2022-05-27"
+ },
+ "li2025unifying": {
+  "arxiv": "2505.22165",
+  "overview": "NeoDiff unifies discrete and continuous text diffusion. Tokens diffuse at different rates, which gives fine-grained noise with per-token progress.",
+  "published": "2025-05-28"
+ },
+ "li2026convergeflow": {
+  "arxiv": "2608.23551",
+  "code": "https://github.com/Na-Li66/ConvergeFlow",
+  "overview": "ConvergeFlow constrains the data predictor to the convex hull of token embeddings and trains only with mean squared error. The authors prove convergence to valid token embeddings, so no cross-entropy decoder is needed.",
+  "published": "2026-08-24"
+ },
+ "li2026elf": {
+  "arxiv": "2609.29102",
+  "code": "https://github.com/lizeyu090312/scaling_dLM",
+  "overview": "ELF-REG scales ELF to math reasoning and code generation. A frozen autoregressive teacher supervises intermediate denoiser features and supplies a global representation that is denoised jointly with the response.",
+  "published": "2026-09-24"
+ },
+ "li2026improving": {
+  "arxiv": "2608.22244",
+  "overview": "The authors trace few-step degradation to a mismatch in self-conditioning between training and sampling, and they derive a corrected form that unties the two.",
+  "published": "2026-08-23"
+ },
+ "li2026juice": {
+  "arxiv": "2610.28801",
+  "code": "https://github.com/Ced3-han/JUICE-Code",
+  "overview": "JUICE generates images and text with one process, trained jointly from scratch in pretrained encoder spaces, instead of attaching a diffusion head to a language model.",
+  "published": "2026-10-20"
+ },
+ "li2026onestep": {
+  "arxiv": "2610.04454",
+  "overview": "The authors derive and compare geometry-aware drift fields for training one-step generators on constrained spaces, where unconstrained additive updates can leave the valid domain.",
+  "published": "2026-10-03"
+ },
+ "liang2026aurora": {
+  "arxiv": "2608.02602",
+  "code": "https://github.com/fyv587/AURORA-LM",
+  "overview": "AURORA-LM keeps a high-capacity, decodable text latent instead of compressing it to ease diffusion, and it designs the diffusion model to learn that latent's distribution directly.",
+  "published": "2026-08-03"
+ },
+ "lin2023text": {
+  "arxiv": "2212.11685",
+  "code": "https://github.com/microsoft/ProphetNet",
+  "overview": "GENIE is a large pretrained diffusion language model with an encoder and a diffusion decoder. It trains on a continuous paragraph denoising objective that reconstructs clean paragraphs from corrupted ones.",
+  "published": "2022-12-22"
+ },
+ "lipman2023flow": {
+  "arxiv": "2210.02747",
+  "code": "https://github.com/facebookresearch/flow_matching",
+  "published": "2022-10-06"
+ },
+ "liu2023flow": {
+  "arxiv": "2209.03003",
+  "code": "https://github.com/gnobitab/RectifiedFlow",
+  "published": "2022-09-07"
+ },
+ "liu2024enable": {
+  "overview": "FMSeq speeds up sequence-to-sequence text diffusion. It combines embedding denoising, self-conditioning, and a shifted time input to sample in about ten steps."
+ },
+ "liu2024text": {
+  "arxiv": "2402.14843",
+  "overview": "TREC analyzes text diffusion models and addresses two limitations: self-conditioning that degrades during training, and misalignment between training and sampling.",
+  "published": "2024-02-19"
+ },
+ "liu2026onestep": {
+  "arxiv": "2610.12879",
+  "code": "https://github.com/jyliu-ai/Seq-Drifting",
+  "overview": "Seq-Drifting learns a direct map from Gaussian noise to text. Its attraction and repulsion targets adapt to the context generated at each position.",
+  "published": "2026-10-09"
+ },
+ "lovelace2023latent": {
+  "arxiv": "2212.09462",
+  "code": "https://github.com/justinlovelace/latent-diffusion-for-language",
+  "overview": "LD4LG learns a high-quality autoencoder from an encoder-decoder language model, then trains continuous diffusion in its latent space. A pretrained decoder turns sampled latents into text.",
+  "published": "2022-12-19"
+ },
+ "lovelace2024diffusion": {
+  "arxiv": "2408.04220",
+  "code": "https://github.com/justinlovelace/Diffusion-Guided-LM",
+  "overview": "DGLM uses a guided diffusion model to produce a latent proposal that steers an autoregressive language model. This pairs the easy guidance of diffusion with the low perplexity of autoregressive models.",
+  "published": "2024-08-08"
+ },
+ "luo2026designing": {
+  "arxiv": "2610.22330",
+  "overview": "LangDiT comes from a systematic study of Transformer architectures for continuous diffusion language models, covering choices such as normalization and noise conditioning.",
+  "published": "2026-10-15"
+ },
+ "mahabadi2024tess": {
+  "arxiv": "2305.08379",
+  "code": "https://github.com/allenai/tess-diffusion",
+  "overview": "TESS is a fully non-autoregressive text diffusion model. It diffuses in logit simplex space instead of a learned embedding space and uses a new form of self-conditioning.",
+  "published": "2023-05-15"
+ },
+ "meng2023distillation": {
+  "arxiv": "2210.03142",
+  "published": "2022-10-06"
+ },
+ "meshchaninov2024diffusion": {
+  "arxiv": "2403.03726",
+  "code": "https://github.com/MeshchaninovViacheslav/DiMA",
+  "overview": "DiMA is a latent diffusion framework on protein language model representations. The authors explore its design choices across encoders from 8M to 3B parameters.",
+  "published": "2024-03-06"
+ },
+ "meshchaninov2026cosmos": {
+  "arxiv": "2506.21170",
+  "code": "https://github.com/MeshchaninovViacheslav/cosmos",
+  "overview": "Cosmos generates text in a compressed, smooth latent space built for diffusion. Its autoencoder trains on token reconstruction and on alignment with a frozen pretrained language encoder.",
+  "published": "2025-06-26"
+ },
+ "meshchaninov2026train": {
+  "arxiv": "2605.07933",
+  "overview": "LDLM trains its latent encoder, diffusion model, and decoder jointly by reshaping a pretrained language model's representations. The authors show that naive joint training fails and propose a simple recipe.",
+  "published": "2026-05-08"
+ },
+ "miele2026spherical": {
+  "arxiv": "2610.35101",
+  "overview": "SBD uses Brownian motion as the forward process on the sphere, with a clean-token posterior learned by cross-entropy. The authors separate how much the forward process matters from how much the sampler matters.",
+  "published": "2026-10-26"
+ },
+ "nguyen2026fastdiss": {
+  "arxiv": "2604.05551",
+  "overview": "FastDiSS shows that inaccurate self-conditioning creates an approximation gap in few-step sampling, and it closes this gap to make few steps match many steps in sequence-to-sequence tasks.",
+  "published": "2026-04-07"
+ },
+ "oba2026bct": {
+  "arxiv": "2610.27641",
+  "code": "https://github.com/daioba/bct",
+  "overview": "BCT makes temperature scaling consistent in flow language models. Post-hoc tempering otherwise changes the noisy-state distribution in ways that the denoiser and transport dynamics do not reflect.",
+  "published": "2026-10-20"
+ },
+ "ollu2026denoising": {
+  "arxiv": "2610.08738",
+  "code": "https://github.com/matol-16/HCDLM",
+  "overview": "H-CoBit diffuses tokens jointly with coarser clusters of pretrained token embeddings. This adds semantic structure to the representation with little extra compute.",
+  "published": "2026-10-06"
+ },
+ "peebles2023scalable": {
+  "arxiv": "2212.09748",
+  "code": "https://github.com/facebookresearch/DiT",
+  "published": "2022-12-19"
+ },
+ "peng2026coupling": {
+  "arxiv": "2605.07193",
+  "code": "https://github.com/pengzhangzhi/Coupling-Models",
+  "overview": "Coupling Models learn a direct coupling between discrete sequences and Gaussian latents, and a purpose-built decoder inverts it for one-step generation without distilling a teacher.",
+  "published": "2026-05-08"
+ },
+ "peng2026don": {
+  "arxiv": "2605.06885",
+  "code": "https://github.com/pengzhangzhi/Open-dLLM",
+  "overview": "The authors adapt autoregressive checkpoints to diffusion models by aligning internal representations, rather than transferring parameters alone. Denoiser features align with those of a frozen teacher.",
+  "published": "2026-05-07"
+ },
+ "potaptchik2026discrete": {
+  "arxiv": "2604.09784",
+  "overview": "Discrete Flow Maps reconcile trajectory compression with the geometry of the simplex, replacing the Euclidean regression losses that suit discrete data poorly.",
+  "published": "2026-04-10"
+ },
+ "pynadath2025candi": {
+  "arxiv": "2510.22510",
+  "overview": "CANDI introduces token identifiability to explain how Gaussian noise corrupts discrete data. It decouples discrete and continuous corruption so that a model can learn both structure and geometry.",
+  "published": "2025-10-26"
+ },
+ "pynadath2026generative": {
+  "arxiv": "2604.02718",
+  "overview": "This technical note discusses the limits of current evaluation for diffusion language models, including likelihood-based metrics, and proposes principled additions for reliable comparisons.",
+  "published": "2026-04-03"
+ },
+ "raya2026noise": {
+  "arxiv": "2602.18647",
+  "overview": "InfoNoise adapts the noise schedule during training. It estimates a conditional-entropy-rate profile from denoising losses and reallocates effort to the most informative noise levels.",
+  "published": "2026-02-20"
+ },
+ "rekesh2026inverseconfidence": {
+  "overview": "INCO assigns larger denoising steps to less confident positions, which improves the sample quality of LangFlow without retraining."
+ },
+ "ren2026hierarchical": {
+  "arxiv": "2610.02193",
+  "code": "https://github.com/rhfeiyang/HC-DLM",
+  "overview": "HC-DLM couples discrete token generation with a continuous latent trajectory, so that the tokens decoded together stay tied to a shared state.",
+  "published": "2026-10-01"
+ },
+ "rombach2022high": {
+  "arxiv": "2112.10752",
+  "code": "https://github.com/CompVis/latent-diffusion",
+  "published": "2021-12-20"
+ },
+ "roos2026categorical": {
+  "arxiv": "2602.12233",
+  "code": "https://github.com/olsdavis/semicat",
+  "overview": "Categorical Flow Maps accelerate few-step generation of categorical data through self-distillation. A flow map toward the simplex constrains predictions, and a new endpoint consistency objective trains it.",
+  "published": "2026-02-12"
+ },
+ "sahoo2025diffusion": {
+  "arxiv": "2506.10892",
+  "code": "https://github.com/s-sahoo/duo",
+  "overview": "Duo shows that uniform-state discrete diffusion emerges from an underlying Gaussian diffusion, and it transfers Gaussian techniques to improve discrete training and sampling.",
+  "published": "2025-06-12"
+ },
+ "salimans2022progressive": {
+  "arxiv": "2202.00512",
+  "code": "https://github.com/google-research/google-research/tree/master/diffusion_distillation",
+  "published": "2022-02-01"
+ },
+ "schiff2026clock": {
+  "arxiv": "2610.00894",
+  "overview": "Clock Diffusion uses position-dependent noise schedules to define semi-autoregressive continuous models, which adds variable-length generation and support for a key-value cache.",
+  "published": "2026-10-01"
+ },
+ "semenov2026latent": {
+  "overview": "CoFlow distills a self-conditioned embedded flow and shows that the embedding itself can adapt during distillation, which supports few-step text generation."
+ },
+ "shabalin2025smoothie": {
+  "arxiv": "2505.18853",
+  "code": "https://github.com/ashaba1in/smoothie",
+  "overview": "Smoothie progressively smooths token embeddings based on semantic similarity. This removes information gradually while keeping a natural way to decode tokens.",
+  "published": "2025-05-24"
+ },
+ "shabalin2025tencdm": {
+  "arxiv": "2402.19097",
+  "code": "https://github.com/M0RJIQUE/tencdm",
+  "overview": "TEncDM diffuses in the space of pretrained language model encodings, which carry context that plain embeddings lack. The authors examine how the encoder, decoder, noise schedule, and self-conditioning affect generation.",
+  "published": "2024-02-29"
+ },
+ "shabalin2026why": {
+  "arxiv": "2604.02028",
+  "overview": "The authors identify a critical sampling interval in which noisy discrete data becomes multimodal, so DDPM can enter low-density regions. They explain why self-conditioning and q-sampling help.",
+  "published": "2026-04-02"
+ },
+ "shao2025continuous": {
+  "arxiv": "2510.27688",
+  "code": "https://github.com/shaochenze/calm",
+  "overview": "CALM compresses chunks of tokens into continuous vectors with a high-fidelity autoencoder, then predicts the next vector instead of the next token. This reduces the number of generative steps.",
+  "published": "2025-10-31"
+ },
+ "shaul2026parallel": {
+  "arxiv": "2607.26004",
+  "code": "https://github.com/NVlabs/FastGen",
+  "published": "2026-07-28"
+ },
+ "shen2026codar": {
+  "arxiv": "2603.02547",
+  "overview": "CoDAR identifies token rounding as a main bottleneck of continuous diffusion. It keeps diffusion fully continuous and adds an autoregressive decoder that performs contextual rounding to tokens.",
+  "published": "2026-03-03"
+ },
+ "shen2026flashmap": {
+  "arxiv": "2610.24365",
+  "code": "https://github.com/al-jshen/flashmap",
+  "overview": "FlashMap is a speculative decoding drafter. It conditions a flow map language model on the target model's hidden states to draft a whole block in one pass while capturing dependencies between tokens.",
+  "published": "2026-10-17"
+ },
+ "song2021score": {
+  "arxiv": "2011.13456",
+  "code": "https://github.com/yang-song/score_sde",
+  "published": "2020-11-26"
+ },
+ "song2023consistency": {
+  "arxiv": "2303.01469",
+  "code": "https://github.com/openai/consistency_models",
+  "published": "2023-03-02"
+ },
+ "stark2024dirichlet": {
+  "arxiv": "2402.05841",
+  "code": "https://github.com/HannesStark/dirichlet-flow-matching",
+  "overview": "Dirichlet FM uses mixtures of Dirichlet distributions as probability paths, because linear flow matching on the simplex has discontinuous targets. It supports guidance and one-step distilled generation for DNA design.",
+  "published": "2024-02-08"
+ },
+ "strudel2022self": {
+  "arxiv": "2211.04236",
+  "overview": "SED runs continuous diffusion on token embeddings for conditional and unconditional text generation. Its samples are comparable to those of standard autoregressive models.",
+  "published": "2022-11-08"
+ },
+ "su2026rectified": {
+  "arxiv": "2610.33811",
+  "overview": "ReLF transports noise to token embeddings with rectified flow. It combines fixed Hellinger-SVD embeddings, self-conditioning guidance, and regularized reflow.",
+  "published": "2026-10-24"
+ },
+ "suleymanzade2026thinking": {
+  "arxiv": "2609.11801",
+  "code": "https://github.com/MisakiTaro0414/looped-flows",
+  "overview": "Looped Flows train recurrent models with local denoising objectives at decreasing noise levels, which lets early updates support later ones even when gradients cover only a few updates.",
+  "published": "2026-09-10"
+ },
+ "tae2025tess2": {
+  "arxiv": "2502.13917",
+  "code": "https://github.com/hamishivi/tess-2",
+  "overview": "TESS 2 is an instruction-following diffusion model that adapts a strong autoregressive model through continued pretraining. The authors also propose reward guidance, which aligns outputs at inference time without retraining.",
+  "published": "2025-02-19"
+ },
+ "tang2025gumbel": {
+  "arxiv": "2503.17361",
+  "overview": "Gumbel-Softmax FM uses an interpolant with a time-dependent temperature so that simplex flows scale to peptides and proteins. Straight-through guidance then steers generation.",
+  "published": "2025-03-21"
+ },
+ "tang2026discrete": {
+  "arxiv": "2609.15903",
+  "code": "https://github.com/sophtang/DBTM",
+  "overview": "DBTM learns a time-independent flow whose transport map carries any point to a simplex vertex in one step. A conservation equation trains it directly from data, with no teacher and no time conditioning.",
+  "published": "2026-09-14"
+ },
+ "tang2026expanding": {
+  "arxiv": "2607.21585",
+  "overview": "Expanding Flow Maps define flows between distributions of increasing dimension, so sequence length can grow during generation. Each map splits into expand and flow operations for few-step models.",
+  "published": "2026-07-23"
+ },
+ "tao2026multimodal": {
+  "arxiv": "2609.40362",
+  "code": "https://github.com/hustvl/Multimodal-Flow",
+  "overview": "MF-1 is a fully continuous generative model of language and vision. It organizes text blocks and images as ordered chunks in a shared chunk-causal flow backbone.",
+  "published": "2026-09-30"
+ },
+ "tong2024improving": {
+  "arxiv": "2302.00482",
+  "code": "https://github.com/atong01/conditional-flow-matching",
+  "published": "2023-02-01"
+ },
+ "uziel2026crocodil": {
+  "arxiv": "2603.20210",
+  "overview": "CRoCoDiL shifts masked diffusion into a continuous sentence-level semantic space. An encoder and demasker train jointly, which addresses incoherence between tokens.",
+  "published": "2026-03-02"
+ },
+ "vaina2024diffusion": {
+  "arxiv": "2305.10818",
+  "overview": "The authors estimate how complete a text generation is and adaptively halt it. This allows more generation steps within a fixed time budget.",
+  "published": "2023-05-18"
+ },
+ "vankiem2026distribution": {
+  "arxiv": "2609.40235",
+  "overview": "The authors study distributional distillation for continuous models. Simplex-DMD uses continuous token relaxations with pathwise gradients, and Reinforce-DMD uses categorical samples with REINFORCE.",
+  "published": "2026-09-30"
+ },
+ "wang2026masked": {
+  "arxiv": "2606.29066",
+  "overview": "The authors reinterpret mask prediction as clean-state prediction, which induces a continuous flow in embedding space. Tokens can then accumulate partial progress and remain revisable.",
+  "published": "2026-06-27"
+ },
+ "warczynski2026onestep": {
+  "overview": "The authors use shortcut modeling to generate natural language in one step without autoregression."
+ },
+ "wu2023ar": {
+  "arxiv": "2305.09515",
+  "code": "https://github.com/microsoft/ProphetNet",
+  "overview": "AR-Diffusion gives tokens on the left fewer denoising steps than tokens on the right, so that later tokens depend on earlier ones, as in natural language.",
+  "published": "2023-05-16"
+ },
+ "yang2026continuous": {
+  "arxiv": "2605.18530",
+  "overview": "RePlaid revisits Plaid and aligns its architecture with modern discrete diffusion models. The authors use it to establish a scaling law for continuous diffusion that rivals discrete diffusion.",
+  "published": "2026-05-18"
+ },
+ "yang2026graft": {
+  "arxiv": "2610.29136",
+  "overview": "GRAFT identifies a hidden cost of never discretizing during sampling, namely a collapse of the lexical long tail, and it restores a sampling interface to continuous models.",
+  "published": "2026-10-21"
+ },
+ "yang2026large": {
+  "arxiv": "2610.02665",
+  "overview": "Sigma is a large continuous diffusion language model at 3B and 8B parameters. It trains blockwise by likelihood, starts from pretrained autoregressive weights, and relies on guidance and score temperature for reasoning and coding.",
+  "published": "2026-10-02"
+ },
+ "yin2024one": {
+  "arxiv": "2311.18828",
+  "published": "2023-11-30"
+ },
+ "yoo2026self": {
+  "arxiv": "2607.00714",
+  "code": "https://github.com/Ugness/self-conditioned-fmlm",
+  "overview": "The authors show that self-conditioned flow language models perform a fixed-point iteration. Fixed-point flows use this view to carry self-conditioning into few-step flow map models.",
+  "published": "2026-07-01"
+ },
+ "yu2024representation": {
+  "arxiv": "2410.06940",
+  "code": "https://github.com/sihyun-yu/REPA",
+  "published": "2024-10-09"
+ },
+ "yu2026dsl": {
+  "arxiv": "2606.01024",
+  "overview": "DSL-LLaDA lightly adapts a pretrained masked model to continuous denoising by replacing binary masking with per-token Gaussian corruption, which avoids training a continuous model from scratch.",
+  "published": "2026-05-31"
+ },
+ "yuan2022seqdiffuseq": {
+  "arxiv": "2212.10325",
+  "code": "https://github.com/Yuanhy1997/SeqDiffuSeq",
+  "overview": "SeqDiffuSeq adapts continuous diffusion to sequence-to-sequence text generation with an encoder-decoder Transformer that models the denoising function.",
+  "published": "2022-12-20"
+ },
+ "yuan2026one": {
+  "arxiv": "2609.33698",
+  "code": "https://github.com/infiniteYuanyl/JPEG-DLM",
+  "overview": "JPEG-DLM jointly trains a compressor, a flow matching model, and a decoder, so its compressed embeddings are easier to model with diffusion and to decode.",
+  "published": "2026-09-27"
+ },
+ "zhang2023planner": {
+  "arxiv": "2306.02531",
+  "code": "https://github.com/apple-aiml-research/ml-planner",
+  "overview": "PLANNER combines latent semantic diffusion with autoregressive generation. The diffusion stage exercises global control over a paragraph, and the autoregressive decoder keeps the text fluent.",
+  "published": "2023-06-05"
+ },
+ "zhang2024language": {
+  "arxiv": "2403.16995",
+  "overview": "LanguageFlow learns ODEs that transport between source and target distributions, which reduces the thousands of denoising steps that diffusion language models otherwise need.",
+  "published": "2024-03-25"
+ },
+ "zhang2026flowlm": {
+  "arxiv": "2605.20199",
+  "overview": "FlowLM turns pretrained diffusion language models into flow matching models by fine-tuning, which straightens curved trajectories for few-step generation. The authors also validate clean-data prediction as the training target.",
+  "published": "2026-04-06"
+ },
+ "zhang2026gumbel": {
+  "arxiv": "2603.22216",
+  "code": "https://github.com/hxixixh/gumbel-distill",
+  "overview": "Gumbel Distillation uses the Gumbel-Max trick to map latent noise deterministically to the outputs of an autoregressive teacher, so that parallel decoders can learn the joint distribution of tokens.",
+  "published": "2026-03-23"
+ },
+ "zhang2026low": {
+  "arxiv": "2607.00588",
+  "code": "https://github.com/ZhangShuai1230/ACE-DLM",
+  "overview": "The authors link repetition in ELF to a self-conditioning feedback loop. Their training-free method, ACE, estimates a repetition direction and subtracts it from the feedback during denoising.",
+  "published": "2026-07-01"
+ },
+ "zhang2026scaling": {
+  "arxiv": "2610.01016",
+  "code": "https://github.com/la0ka1/diffusing-scaled-text-embeddings",
+  "overview": "The authors ask which text embedding makes the best latent space. Stronger embedding models help, but raw embeddings can be too discriminative, so the authors also distill them to improve diffusibility.",
+  "published": "2026-10-01"
+ },
+ "zheng2026cadd": {
+  "arxiv": "2510.01329",
+  "code": "https://github.com/apple-aiml-research/ml-cadd",
+  "overview": "CADD pairs discrete diffusion with a diffusion in continuous latent space. Masked tokens become noisy but informative vectors, which can act as semantic hints during denoising.",
+  "published": "2025-10-01"
+ },
+ "zhou2024score": {
+  "arxiv": "2404.04057",
+  "code": "https://github.com/mingyuanzhou/SiD",
+  "published": "2024-04-05"
+ },
+ "zhou2025ccdd": {
+  "arxiv": "2510.03206",
+  "code": "https://github.com/zhouc20/CCDD",
+  "overview": "CCDD argues that continuous diffusion is more expressive but harder to train than discrete diffusion, so it evolves continuous and discrete states together.",
+  "published": "2025-10-03"
+ },
+ "zhou2026terminal": {
+  "arxiv": "2511.19797",
+  "code": "https://github.com/lumalabs/tvm",
+  "published": "2025-11-24"
+ },
+ "zhu2025segment": {
+  "arxiv": "2412.11333",
+  "code": "https://github.com/SpaceHunterInf/Segment_Level_Diffusion",
+  "overview": "Segment-Level Diffusion targets long-form generation. It splits the output into multiple latent segments and decodes them with an autoregressive decoder, which simplifies diffusion and improves scalability.",
+  "published": "2024-12-15"
+ },
+ "zhuang2026bitlm": {
+  "arxiv": "2605.11577",
+  "overview": "BitLM represents each token as a binary code and uses a light diffusion head to denoise several tokens in parallel within a block, while keeping left-to-right structure between blocks.",
+  "published": "2026-05-12"
+ }
+}
